@@ -1,0 +1,22 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
+.widget_tag_cloud{
+    .tagcloud{
+        a{
+            color: $primary_color;
+            font-size: 14px;
+            padding: 1px 10px;
+            display: inline-block;
+            margin: 0 5px 10px 0;
+            border: 1px solid;
+            &:hover{
+                color: $white_color;
+                border-color: $primary_color;
+                background-color: $primary_color;
+            }
+        }
+    }
+}

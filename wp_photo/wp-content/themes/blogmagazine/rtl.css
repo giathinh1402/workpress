@@ -1,0 +1,90 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.7
+ */
+
+/*======================================================================================
+RTL Normalize
+======================================================================================*/
+
+blockquote::before{
+	content:"\201D";
+	right:20px;
+}
+
+/*======================================================================================
+Header Section
+======================================================================================*/
+
+/*
+ * Main Navigation
+ */
+.main-navigation ul.sub-menu .menu-item.menu-item-has-children > a::before{
+	content:"\f104";
+}
+
+/*
+ * Ticker Section
+ */
+
+.blogmagazine-ticker-block .lSAction > a{
+	float:left;
+}
+.blogmagazine-ticker-block .vertical .lSAction > a.lSPrev{
+	margin:0 5px 0 0;
+}
+
+.ticker-content-wrapper .lSSlideOuter.vertical .lSAction .lSNext, 
+.ticker-content-wrapper .lSSlideOuter.vertical .lSAction .lSPrev{
+	float:left;
+}
+
+/*======================================================================================
+Widget Sections
+======================================================================================*/
+
+/*
+ * Widget reset
+ */
+
+.blogmagazine-post-content{
+	text-align:right;
+}
+
+/*
+ * Widget meta
+ */
+.widget_meta a::before{
+	content: "\f104";
+}
+
+/*
+ * Featured Slider Section
+ *
+ * All rtl related css generated from grunt and this rtl css is just for issue fixing for rtl mode.
+ */
+.blogmagazine_featured_slider .slider-posts{
+	direction: ltr;
+}
+
+.blogmagazine-featured-main-slider{
+	direction: rtl;
+}
+
+/*
+ * Carousel Widget
+ */
+.blogmagazine-block-posts-wrapper{
+	direction:ltr;
+}
+.blogmagazine-block-carousel{
+	direction:rtl;
+}
+
+.lSAction,
+.carousel-nav-action{
+	direction: ltr;
+}
+
+

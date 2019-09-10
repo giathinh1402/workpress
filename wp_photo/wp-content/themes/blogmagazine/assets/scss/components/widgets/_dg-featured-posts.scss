@@ -1,0 +1,86 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.2
+ */
+
+.blogmagazine_featured_posts{
+    img{
+        width:100%;
+    }
+    .blogmagazine-post-thumb{
+        float: left;
+        width: 45%;
+        padding: 0 10px 0 0;
+        .no-thumbnail{
+            display:block;
+            padding-top:100%;
+            background-color:#f3f3f3;
+        }
+    }
+    .blogmagazine-post-title.small-size{
+        line-height: 1em;
+        a{
+            color: $body_color;
+            font-size: 16px;
+            line-height:1.4em;
+            text-transform: capitalize;
+            @media (max-width: 979px){
+                font-size: 14px;
+            }
+            &:hover{
+                color: $primary_color;
+            }
+        }
+    }
+    .blogmagazine-post-content{
+        float: left;
+        padding: 0;
+        float: left;
+        width: 55%;
+        position: static;
+        background: rgba(0, 0, 0, 0);
+    }
+    .blogmagazine-post-meta{
+        span{
+            color: #989898;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            margin-right: 15px;
+            a{
+                color: #989898;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                &:hover{
+                    color: $primary_color;
+                }
+            }
+            &:hover{
+                color: $primary_color;
+            }
+            .byline{
+                display: block;
+            }
+            @media (max-width: 1170px){
+                margin-right: 8px;
+            }
+        }
+                
+    }
+    .blogmagazine-single-post-wrap{
+        float: left;
+        width: 25%;
+        padding: 0 7.5px;
+        @media (max-width: 979px){
+            width: 50%;
+        }
+        @media (max-width: 600px){
+            width: 100%;
+        }
+    }
+    .blogmagazine-featured-posts-wrapper{
+        margin: 0 -7.5px;
+    }
+}

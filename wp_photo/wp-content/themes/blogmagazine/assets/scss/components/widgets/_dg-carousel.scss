@@ -1,0 +1,136 @@
+/*
+ * @package dineshghimire
+ * @subpackage blogmagazine
+ * @since 1.0.0
+ */
+.blogmagazine-block-carousel{
+	margin:0 -7px;
+	list-style:none;
+    img{
+        width:100%;
+    }
+    .no-thumbnail{
+        display:block;
+        padding-top:75%;
+        background-color:#f3f3f3;
+    }
+    li{
+        float:left;
+        padding:0 7px;
+    }
+    &.column1{
+        li{
+            width:100%;
+            &:nth-child(n+2){
+                display:none;
+            }
+        }
+    }
+    &.column2{
+        li{
+            width:50%;
+            &:nth-child(n+3){
+                display:none;
+            }
+        }
+    }
+    &.column3{
+        li{
+            width:33.33%;
+            &:nth-child(n+4){
+                display:none;
+            }
+        }
+    }
+    &.column4{
+        li{
+            width:25%;
+            &:nth-child(n+5){
+                display:none;
+            }
+        }
+    }
+    &.lightSlider{
+        margin:0;
+        li{
+            width:100%;
+            display:block;
+            padding:0;
+        }
+        &.column1{
+            li{
+                &:nth-child(n+2){
+                    display:block;
+                }
+            }
+        }
+        &.column2{
+            li{
+                &:nth-child(n+3){
+                    display:block;
+                }
+            }
+        }
+        &.column3{
+            li{
+                &:nth-child(n+4){
+                    display:block;
+                }
+            }
+        }
+        &.column4{
+            li{
+                &:nth-child(n+5){
+                    display:block;
+                }
+            }
+        }
+    }
+	.blogmagazine-single-post{
+	    position: relative;
+	}
+    &:after{
+        content:"";
+        clear:both;
+        display:block;
+    }
+}
+
+.blogmagazine_carousel{
+    .blogmagazine-single-post{
+        position: relative;
+        .blogmagazine-post-title{
+            line-height: 26px;
+            margin: 5px 0;
+            a{
+                color: $white_color;
+                font-size: 16px;
+                line-height:1.4em;
+                text-transform: capitalize;
+                &:hover{
+                    color: $primary_color;
+                }
+            }
+        }
+        .blogmagazine-post-meta{
+            span{
+                color: #cfcfcf;
+                a{
+                    color: #cfcfcf;
+                }
+            }
+        }
+        .blogmagazine-post-content{
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 20px;
+            position: absolute;
+            background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)) repeat scroll 0 0;
+            .blogmagazine-post-title{
+                margin: 5px 0;
+                line-height: 26px;
+            }
+        }
+    }
+}
